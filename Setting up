@@ -1,1 +1,4 @@
-
+In the terminal ('sudo apt update' then upgrade )
+sudo apt install beef-xss  (for browser vulnerabilities)
+sudo apt install bettercap  (for network vulnerabilities)
+sudo beef-xss (to access the tool interface)
